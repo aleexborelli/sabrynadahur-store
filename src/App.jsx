@@ -4,6 +4,7 @@ import AdminGuard from "./components/admin/AdminGuard";
 import AdminLayout from "./components/admin/AdminLayout";
 import Home from "./pages/Home";
 import Catalog from "./pages/Catalog";
+import ProductDetail from "./pages/ProductDetail";
 import Cart from "./pages/Cart";
 import Checkout from "./pages/Checkout";
 import Account from "./pages/Account";
@@ -20,6 +21,7 @@ export default function App() {
     <Route element={<StoreLayout />}>
       <Route path="/" element={<Home />} />
       <Route path="/produtos" element={<Catalog />} />
+      <Route path="/produtos/:id" element={<ProductDetail />} />
       <Route path="/carrinho" element={<Cart />} />
       <Route path="/checkout" element={<Checkout />} />
       <Route path="/minha-conta" element={<Account />} />
